@@ -31,14 +31,7 @@ public class Main {
         gy1.vetel(3);
         System.out.println(gy1);
 
-        private void szerializacio(){
-            try(ObjectOutputStream objKi = new ObjectOutputStream(new FileOutputStream("gyujtemeny.ser"))){
-                objKi.writeObject(gy1);}
-            catch (IOException e){
-                throw new RuntimeException();
-
-            }
-        }
+       //
 
 
     }

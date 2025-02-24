@@ -9,4 +9,5 @@ public class kiadasEveComparator implements Comparator<Konyv> {
         Collator c=Collator.getInstance();
         return c.compare(o1.getKiadasiEve(), o2.getKiadasiEve());
     }
+    //
 }

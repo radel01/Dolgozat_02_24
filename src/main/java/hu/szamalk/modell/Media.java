@@ -1,8 +1,9 @@
 package hu.szamalk.modell;
 
+import java.io.Serializable;
 import java.util.UUID;
 
-public class Media{
+public class Media implements Serializable {
     private UUID ID;
     private Integer ar;
     private Kategoria kategoria;

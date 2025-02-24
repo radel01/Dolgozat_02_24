@@ -8,5 +8,5 @@ public class SzerzoComparator implements Comparator<Konyv> {
     public int compare(Konyv o1, Konyv o2) {
         Collator c=Collator.getInstance();
         return c.compare(o1.getSzerzo(), o2.getSzerzo());
-    }
+    }//
 }

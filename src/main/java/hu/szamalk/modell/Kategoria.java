@@ -1,6 +1,8 @@
 package hu.szamalk.modell;
 
-public class Kategoria {
+import java.io.Serializable;
+
+public class Kategoria implements Serializable{
     private String leiras;
 
     public Kategoria(String leiras) {
@@ -14,4 +16,5 @@ public class Kategoria {
     public void setLeiras(String leiras) {
         this.leiras = leiras;
     }
+    //
 }

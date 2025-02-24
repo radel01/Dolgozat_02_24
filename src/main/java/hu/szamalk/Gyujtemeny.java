@@ -5,11 +5,12 @@ import hu.szamalk.modell.Media;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class Gyujtemeny implements Iterable {
+public class Gyujtemeny implements Iterable, Serializable {
     private int ferohely;
     private ArrayList<Media> mediaLista;
 
@@ -53,4 +54,12 @@ public class Gyujtemeny implements Iterable {
     public Iterator iterator() {
         return null;
     }
+    private void szerializacio(){
+        try(ObjectOutputStream objKi = new ObjectOutputStream(new FileOutputStream("gyujtemeny.ser"))){
+            objKi.writeObject(this.toString());
+        }catch (IOException e){
+            throw new RuntimeException();
+
+        }
+    }//
 }

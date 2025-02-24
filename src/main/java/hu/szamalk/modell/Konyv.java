@@ -77,5 +77,5 @@ public class Konyv extends Media implements Cloneable, Comparable<Konyv>, Serial
     protected Object clone() throws CloneNotSupportedException {
         return super.clone();
     }
-
+//
 }
